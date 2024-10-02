@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login2024/Services/auth_services.dart';
+import 'package:login2024/screens/LoginPage.dart';
 import 'package:provider/provider.dart';
 
 class CheckingAuthScren extends StatelessWidget{
@@ -19,7 +20,7 @@ class CheckingAuthScren extends StatelessWidget{
                 Navigator.pushReplacement(
                   context,
                   PageRouteBuilder(
-                    pageBuilder: LoginPage(),
+                    pageBuilder: (_, __, ____) => Loginpage(),
                     transitionDuration: Duration(seconds: 0)
                     )
                 );
