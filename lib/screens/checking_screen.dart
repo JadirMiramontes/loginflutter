@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login2024/Services/auth_services.dart';
 import 'package:login2024/screens/LoginPage.dart';
+import 'package:login2024/screens/principal_screen.dart';
 import 'package:provider/provider.dart';
 
 class CheckingAuthScren extends StatelessWidget{
@@ -29,7 +30,7 @@ class CheckingAuthScren extends StatelessWidget{
               Future.microtask((){
                 Navigator.pushReplacement(
                   context,
-                  PageRouteBuilder(pageBuilder:(_,__,___) => PrincipalScr(),
+                  PageRouteBuilder(pageBuilder:(_,__,___) => PrincipalScreen(),
                   transitionDuration: Duration(seconds: 0))
                   );
               });

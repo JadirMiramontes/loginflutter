@@ -3,6 +3,7 @@ import 'package:login2024/Services/auth_services.dart';
 import 'package:login2024/Services/notifications_services.dart';
 import 'package:login2024/screens/LoginPage.dart';
 import 'package:login2024/screens/checking_screen.dart';
+import 'package:login2024/screens/principal_screen.dart';
 import 'package:login2024/screens/registro_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,6 @@ class AppState extends StatelessWidget {
   }
 }
 
-
 class MyApp extends StatelessWidget{
   const MyApp({super.key});
 
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget{
         'home': (_) => PrincipalScreen(),
         'checking': (_) => CheckingAuthScren()
       },
-      scaffoldMessengerKey: NotificationsServices.messengerKey,
-    );
+      scaffoldMessengerKey: NotificationsServices.messengerKey,);
+      
   }
 }
